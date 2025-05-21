@@ -43,6 +43,31 @@
         printf("PIB: ");
         scanf("%f", &pib2);
         
+        float densidade1 = populacao1 / area1;
+        float ppc1 = pib1 / populacao1;
+
+        float densidade2 = populacao2 / area2;
+        float ppc2 = pib2 / populacao2;
+
+        //RESULTADOS
+        printf("\n-----RESULTADOS-----\n");
+        printf("CIDADE 1: %s\n", nome1);
+        printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+        printf("PIB per capita: %2f\n", ppc1);
+
+        printf("-----RESULTADOS-----\n");
+        printf("CIDADE 2: %s\n", nome2);
+        printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+        printf("PIB per capita: %2f\n", ppc2);
+
+        printf("---COMPARAÇÃO DAS CARTAS (ATRIBUTO: POPULAÇÃO) \n");
+
+        if(populacao1 > populacao2){
+        printf("CARTA VENCEDORA: CIDADE 1 %s \n", nome1);
+
+        }else {
+            printf("CARTA VENCEDORA: CIDADE 2 %s \n", nome2);
+        }
 
         return 0;
 
